@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bài 3</title>
+  </head>
+  <body>
+    <!-- <h1 style="color: rgb(194, 5, 5)">Hàm check</h1>
+    <button style="width: 130px; height: 30px" onclick="result()">Run</button>
+    <p id="result"></p> -->
+  </body>
+  <script>
+    function searchMin(num1, num2, num3) {
+      let min = num1;
+      if (num1 === num2 && num2 === num3) {
+        alert("Không có số nhỏ nhất, nhập lại !");
+        return;
+      }
+      if (num2 < min) {
+        min = num2;
+      }
+
+      if (num3 < min) {
+        min = num3;
+      }
+      return alert("Số nhỏ nhất là " + min);
+    }
+    let num1 = +prompt("nhap so num1");
+    let num2 = +prompt("nhap so num2");
+    let num3 = +prompt("nhap so num3");
+    searchMin(num1, num2, num3);
+  </script>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bài 9</title>
+  </head>
+  <body>
+    <!-- <h1 style="color: rgb(194, 5, 5)">Hàm check</h1>
+    <button style="width: 130px; height: 30px" onclick="result()">Run</button>
+    <p id="result"></p> -->
+  </body>
+  <script>
+    function checkChar(arr, char) {
+      let count = 0;
+      for (let i = 0; i < arr.length; i++) {
+        if (arr[i] === char) {
+          count++;
+        }
+      }
+      if (count > 0) {
+        return count;
+      } else {
+        return -1;
+      }
+    }
+    let arrayInput = prompt(
+      "Nhập mảng ký tự, các ký tự cách nhau bởi dấu phẩy (ví dụ: a,b,c,d):"
+    );
+    let charArray = arrayInput.split(",");
+    let charFind = prompt("nhap ki tự cần tìm");
+    let result = checkChar(charArray, charFind);
+    if (result !== -1) {
+      document.write("Kí tự " + charFind + " xuất hiện " + result + " lần");
+    } else {
+      document.write("Kí tự " + charFind + " không xuất hiện trong mảng");
+    }
+  </script>
+</html>
