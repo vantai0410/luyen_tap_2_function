@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hàm truyền vào 2 số nguyên bất kì, thực hiện đổi chỗ hai số nguyên đó.</title>
+</head>
+<body>
+<script>
+    function reverseNumber(num1,num2){
+        document.write("truoc khi doi cho num1,num2 là: " +num1 +" , " + num2);
+        let temp = num1;
+        num1 = num2;
+        num2 = temp;
+        document.write("<br>"+"sau khi doi cho num1,num2 là: " +num1 +" , " + num2);
+        // return [num1,num2];
+    }
+    let a= +prompt("nhap num1");
+    let b= +prompt("nhap num2");
+    reverseNumber(a,b);
+</script>
+</body>
+</html>

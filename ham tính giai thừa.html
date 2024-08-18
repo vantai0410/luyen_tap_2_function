@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hàm tính giai thừa của một số nguyên bất kỳ được đưa vào</title>
+</head>
+<body>
+<script>
+    function tinhGiaiThua(numbers) {
+        if (numbers < 0) {
+            return "Không có giai thừa cho số âm.";
+        }
+        else if (numbers === 0 || numbers === 1) {
+            return 1;
+        }
+        else {
+
+            let giaiThua = 1
+        for (let i = 1; i <= numbers; i++) {
+            giaiThua *= i;
+        }
+        return giaiThua;
+    }
+    let n = +prompt("nhap so: ");
+    document.write(tinhGiaiThua(n));
+</script>
+</body>
+</html>

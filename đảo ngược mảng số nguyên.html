@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hàm truyền vào mảng số nguyên bất kỳ, sau đó đảo ngược mảng số nguyên đó.</title>
+</head>
+<body>
+<script>
+    function reverseNumber(numbers){
+        for (let i = 0; i < numbers.length/2; i++) {
+            let temp = numbers[i];
+            numbers [i] = numbers[numbers.length - i -1];
+            numbers[numbers.length - i -1] = temp;
+        }
+        return numbers;
+    }
+    let mangSoNguyen = [1, 2, 3, 4, 5];
+    document.write(reverseNumber(mangSoNguyen));
+
+
+    // c2:
+    //
+    //     function daoNguocMang(arr) {
+    //         return arr.reverse();
+    //     }
+    // let mangSoNguyen = [1, 2, 3, 4, 5];
+    // console.log("Mảng trước khi đảo ngược: ", mangSoNguyen);
+    //
+    // let mangDaoNguoc = daoNguocMang(mangSoNguyen);
+    // console.log("Mảng sau khi đảo ngược: ", mangDaoNguoc);
+    // document.write("Mảng sau khi đảo ngược: " + mangDaoNguoc);
+</script>
+</body>
+</html>
